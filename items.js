@@ -29,7 +29,7 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-function myFunction() {
+function myFunction1() {
   var x = document.getElementById("drugss");
   if (x.style.display === "none") {
     x.style.display = "block";
