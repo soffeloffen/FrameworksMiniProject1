@@ -1,97 +1,86 @@
-body{
-    font-family: 'Raleway', sans-serif;
-    background-color: #F98071;
-    margin: 0px;
-    }
-    body h1.title{
-    text-align: center;
-    color: #fff;
-    }
-    .visible{
-    display: block;
-    }
-    .hidden{
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
     display: none;
-    }
-    #product-slider{
-    background-color: #fff;
-    }
-    .product-box{
-    background-color: #f1f1f1;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
     text-align: center;
-    }
-    .product-desc{
-    font-weight: bold;
-    padding: 10px 0px;
-    }
-    .product-desc h4{
-    margin: 0;
-    color: #446AAF;
-    font-size: 16px;
-    }
-    .product-desc p{
-    color: #3C3F39;
-    margin: 10px 0px 8px;
-    }
-    .product-desc button{
-    padding: 9px 15px;
-    border-radius: 3px;
-    border: 1px solid #c1c1c1;
-    font-weight: bold;
-    color: #2868AF;
-    background: linear-gradient(#FAFDFF, #E8E8E8);
-    background: -moz-linear-gradient(#FAFDFF, #E8E8E8);
-    background: -webkit-linear-gradient(#FAFDFF, #E8E8E8);
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    }
-    .jscarousal-horizontal{
-    width: 70%;
-    overflow: hidden;
-    height: 280px;
-    padding: 30px 15px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    }
-    .jscarousal-horizontal-back, .jscarousal-horizontal-forward{
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
     float: left;
-    width: 23px;
-    position: relative;
-    top: 50px;
-    cursor: pointer;
-    color: #5D5D5D;
-    font-size: 22px;
-    }
-    .jscarousal-horizontal-forward{
-    float: right;
-    }
-    .jscarousal-horizontal-back:before, .jscarousal-horizontal-forward:before{
-    font-family: FontAwesome;
-    }
-    .jscarousal-horizontal-back:before{
-    content: "\f053";
-    }
-    .jscarousal-horizontal-forward:before{
-    content: "\f054";
-    }
-    .jscarousal-contents-horizontal{
-    width: calc(100% - 50px);
-    height: 100%;
-    float: left;
-    position: relative;
-    overflow: hidden;
-    }
-    .jscarousal-contents-horizontal > .visible{
-    position: absolute;
-    width: 100%;
-    }
-    .jscarousal-contents-horizontal > .visible > .product-box{
-    float: left;
-    margin: 0px 1%;
-    width: 18%;
-    }
-    .jscarousal-contents-horizontal img{
-    width: 100%;
-    }
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
