@@ -29,18 +29,14 @@
     </div>
 
     <h1>View your basket of Dark stuff</h1>
-    <h1 id="h1">Bird Quiz statistics for Anonymous User</h1>
-    <h3 id="atempts">Number of attempts: 0</h3>
+    <h1 id="h1">Basket for Anonymous User</h1>
     <h3 id="wins">Number of wins: 0</h3>
-    <h3 id="losses">Number of losses: 0</h3>
     <script>
         document.body.onload = showStatistics();
         function showStatistics() {
             const userName = localStorage.fname + ' ' + localStorage.lname;
-            document.getElementById('h1').innerHTML = 'Bird Quiz statistics for ' + userName
-            document.getElementById('atempts').innerHTML = 'Number of attempts: ' + getAttempts()
-            document.getElementById('wins').innerHTML = 'Number of wins: ' + getWins()
-            document.getElementById('losses').innerHTML = 'Number of losses: ' + getLosses()
+            document.getElementById('h1').innerHTML = 'Basket for ' + userName
+            document.getElementById('wins').innerHTML = 'Number of items: ' + getWins()
         }
     </script>
   </body>
@@ -60,26 +56,8 @@
     }
   </script>
 
-    
-<h3 id="wins">Number of items in basket: 0</h3>
-<h1 id="h1">Bird Quiz statistics for Anonymous User</h1>
-<a id ="reset" href="/Registration_v1.html" onclick="reset()">Reset and login</a> <br>
-<h3 id="atempts">Number of attempts: 0</h3>
-<h3 id="wins">Number of wins: 0</h3>
-<h3 id="losses">Number of losses: 0</h3>
-<a id ="begin" href="ItemsOverview_v1.html"> Go back to all products</a>
+  
 
-<script>
-  document.body.onload = showStatistics();
-  function showStatistics() {
-      const userName = localStorage.fname + ' ' + localStorage.lname;
-      document.getElementById('h1').innerHTML = 'Bird Quiz statistics for ' + username
-      document.getElementById('atempts').innerHTML = 'Number of attempts: ' + getAttempts()
-      document.getElementById('wins').innerHTML = 'Number of wins: ' + getWins()
-      document.getElementById('losses').innerHTML = 'Number of losses: ' + getLosses()
-  }
-</script>
-
-   <button id ="reset" onclick="reset()">Remove all items</button> <br>
+  <button id ="reset" onclick="reset()">Remove all items</button> <br>
 
 </html>
