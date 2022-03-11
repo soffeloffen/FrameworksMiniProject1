@@ -65,7 +65,5 @@ function reset() {
 //egen function
 
     function buttonClick() {
-        var i = 0;
-        i++;
-        document.getElementById('inc').value = i;
+        document.getElementById('inc').value = i+1;
     }
