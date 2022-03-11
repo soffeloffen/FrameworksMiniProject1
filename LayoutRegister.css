@@ -1,12 +1,12 @@
 h1 {
   text-align: center;
-  color: rgb(6, 53, 75);
+  color: black;
   font-size: 42px;
 }
 
 h3 {
   text-align: center;
-  color: rgb(43, 125, 163);
+  color: black;
 }
 
 .form {
@@ -42,7 +42,8 @@ form {
 }
 
 .button1 {
-  background-color: #121a66;
+  margin-top: 20px;
+  background-color: black;
 } /* Dark Blue */
 
 img {
@@ -104,6 +105,8 @@ a {
   color: rgb(43, 125, 163);
 }
 
-div:hover {
-  box-shadow: 00 2px 1px rgba(0,140,186,0.5);
-}
+
+
+
+
+

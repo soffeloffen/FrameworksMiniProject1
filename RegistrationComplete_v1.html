@@ -2,19 +2,35 @@
   <head>
     <meta charset="utf-8" />
     <title>Registration complete</title>
-    <link rel="stylesheet" href="Layout.css" />
+    <link rel="stylesheet" href="LayoutMenu.css" />
+    <link rel="stylesheet" href="LayoutWelcome.css" />
+    <link rel="stylesheet" href="LayoutRegister.css" />
   </head>
 
-  <body style="background-color: #93c2df" onload="getelement()">
-    <h1>Welcome to the Dark Web</h1>
+  <body style="background-color: #646666" onload="getelement()">
+    <div class="navbar">
+      <a href="Welcome_v1.html">Home</a>
+      <a href="Basket_v1.html">Basket</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dark Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Drugs</a>
+          <a href="#">Fake IDs</a>
+        </div>
+      </div>
 
-    <div class="title">
-      <h3 id="firstname"></h3>
-      <h3>, you are now logged in!</h3>
+      <div class="userNameInMenu">
+        <b id="firstname"></b> 
+      </div>
     </div>
 
+    <h1 class="header">Welcome to the Dark Web</h1>
+
     <div class="container">
-      <a href="ItemsOverview.html">
+      <a href="ItemsOverview_v1.html">
         <button onclick="updateCount" class="button button1">
           Go to the Dark Shop
         </button>
