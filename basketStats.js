@@ -61,3 +61,10 @@ function reset() {
     localStorage.wins = 0
     localStorage.losses = 0
 }
+
+//egen function
+
+function buttonClick() {
+    i++;
+    document.getElementById('inc').value = i;
+}
