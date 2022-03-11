@@ -3,14 +3,44 @@
     <meta charset="utf-8" />
     <title>Basket</title>
     <link rel="stylesheet" href="Layout.css" />
+    <link rel="stylesheet" href="LayoutMenu.css" />
+    <link rel="stylesheet" href="LayoutWelcome.css" />
   </head>
-  <body style="background-color: #82caca">
+  <body style="background-color: #646666">
+    
+    <div class="navbar">
+      <a href="Welcome_v1.html">Home</a>
+      <a href="Basket_v1.html">Basket</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Dark Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Drugs</a>
+          <a href="#">Fake IDs</a>
+        </div>
+      </div>
+      <div class="userNameInMenu">
+        <b id="firstname"></b>
+      </div>
+    </div>
+
     <h1>View your basket of Dark stuff</h1>
 
     <a href="ItemsOverview.html">
       <h1>Go back to browsing</h1>
     </a>
-  </body>
-</html>
 
-test
+  </body>
+  <script>
+    document.body.onload = addUserName();
+
+    function addUserName() {
+      const userName = localStorage.fname;
+      if (userName !== undefined) {
+        document.getElementById("firstname").innerHTML = userName;
+      }
+    }
+  </script>
+</html>
