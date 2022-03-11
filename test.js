@@ -6,6 +6,11 @@ function highlight(e) {
     e.target.parentNode.className = 'selected';
 }
 
+function my_func() {
+    my_func_1();
+    my_func_2();
+}
+
 function fnselect(){
 $("#myTable tr").click(function(){
     $(this).addClass('selected').siblings().removeClass('selected');    
@@ -13,3 +18,4 @@ $("#myTable tr").click(function(){
     alert(value);    
  });
 }
+
