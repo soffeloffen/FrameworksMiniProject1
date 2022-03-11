@@ -31,7 +31,15 @@
             document.getElementById('wins').innerHTML = 'Number of wins: ' + getWins()
         }
     </script>
-    
+
+<script>
+    var i = 0;
+    function buttonClick() {
+        i++;
+        document.getElementById('inc').value = i;
+    }
+</script>
+
        <input type="text" id="inc" value="0"></input>
 
        <button id ="reset" onclick="reset()">Remove all items</button> <br>
