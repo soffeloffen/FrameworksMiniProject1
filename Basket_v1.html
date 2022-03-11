@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="Layout.css" />
     <link rel="stylesheet" href="LayoutMenu.css" />
     <link rel="stylesheet" href="LayoutWelcome.css" />
+    <script src="basketStats.js"></script>
+
   </head>
   <body style="background-color: #646666">
     
@@ -43,4 +45,19 @@
       }
     }
   </script>
+
+    
+<h3 id="wins">Number of wins: 0</h3>
+    
+<script>
+    document.body.onload = showStatistics();
+    function showStatistics() {
+        // const userName = localStorage.fname + ' ' + localStorage.lname;
+      //  document.getElementById('h1').innerHTML = 'Bird Quiz statistics for ' + fname
+        document.getElementById('wins').innerHTML = 'Number of wins: ' + getWins()
+    }
+</script>
+
+   <button id ="reset" onclick="reset()">Remove all items</button> <br>
+
 </html>
