@@ -30,10 +30,19 @@ function showSlides(n) {
 }
 
 function myFunction() {
-  var x = document.getElementById("myTable1");
+  var x = document.getElementById("drugss");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
+
+  function myFunction2() {
+    var x = document.getElementById("idss");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
