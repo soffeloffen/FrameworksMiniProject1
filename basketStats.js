@@ -1,24 +1,4 @@
 
-function incAttempts() {
-    let attempts = localStorage.attempts
-    if(attempts !== undefined) {
-      attempts++
-    } 
-    else {
-      attempts = 1
-    }
-    localStorage.attempts = attempts
-    console.log (localStorage.attempts)
-  
-}
-function getAttempts() {
-    let attempts = localStorage.attempts
-    if(attempts === undefined) {
-      attempts = 0
-    }
-    return attempts 
-}
-
 function incWins() {
     let wins = localStorage.wins
     if(wins === undefined) {
@@ -29,6 +9,7 @@ function incWins() {
     }
     localStorage.wins = wins
 }
+
 function getWins() {
     let wins = localStorage.wins
     if(wins === undefined) {
@@ -37,24 +18,6 @@ function getWins() {
     return wins 
 }
 
-function incLosses() {
-    let losses = localStorage.losses
-    if(losses !== undefined) {
-      losses++
-    } 
-    else {
-      losses = 1
-    }
-    localStorage.losses = losses
-}
-
-function getLosses() {
-    let losses = localStorage.losses
-    if(losses === undefined) {
-        losses = 0
-    }
-    return losses 
-}
 
 function reset() {
     localStorage.attempts = 0
