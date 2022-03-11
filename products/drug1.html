@@ -6,6 +6,7 @@
 </head>
 <body>
 
+
   <div class="container">
     <div class="navbar">
       <a href="../Welcome_v1.html">Home</a>
@@ -26,20 +27,18 @@
   <h1>Magic Mushrooms</h1>
   <p class="price">$19.99</p>
   <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
- 
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <button onclick="incWins()">test</button>
+
+
+
 <script>
-  <p onclick = "incWins()"> Add to Cart </p>
+  document.body.onload = incWins(); // increment wins
 </script>
 
-
-<button id="demo">Click me.</button>
-
-<script>
-document.getElementById("demo").onclick = function() {incWins()};
-
-</script>
-
-</div>
 
 </body>
 </html>
