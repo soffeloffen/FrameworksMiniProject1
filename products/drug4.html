@@ -33,20 +33,20 @@
 
 <script>
   function setProduct(){
-    localStorage.setItem( "Drug4Name", "Joints" );
-    localStorage.setItem( "Drug4Amount", 1);
+    sessionStorage.setItem( "Drug4Name", "Joints" );
+    sessionStorage.setItem( "Drug4Amount", 1);
     }
 
     function plusProduct(){
-    var total = parseInt(localStorage.getItem( "Drug4Amount" ) );
+    var total = parseInt(sessionStorage.getItem( "Drug4Amount" ) );
     var updatedTotal = total +1;
-    localStorage.setItem( "Drug4Amount", updatedTotal ); 
+    sessionStorage.setItem( "Drug4Amount", updatedTotal ); 
     }
 
     function minusProduct(){
-    var total = parseInt(localStorage.getItem( "Drug4Amount" ) );
+    var total = parseInt(sessionStorage.getItem( "Drug4Amount" ) );
     var updatedTotal = total -1;
-    localStorage.setItem( "Drug4Amount", updatedTotal ); 
+    sessionStorage.setItem( "Drug4Amount", updatedTotal ); 
     }
 </script>
 

@@ -34,20 +34,20 @@
 </div>
 <script>
   function setProduct(){
-    localStorage.setItem( "Drug6Name", "Edible Gummies (Hash)" );
-    localStorage.setItem( "Drug6Amount", 1);
+    sessionStorage.setItem( "Drug6Name", "Edible Gummies (Hash)" );
+    sessionStorage.setItem( "Drug6Amount", 1);
     }
 
     function plusProduct(){
-    var total = parseInt(localStorage.getItem( "Drug6Amount" ) );
+    var total = parseInt(sessionStorage.getItem( "Drug6Amount" ) );
     var updatedTotal = total +1;
-    localStorage.setItem( "Drug6Amount", updatedTotal ); 
+    sessionStorage.setItem( "Drug6Amount", updatedTotal ); 
     }
 
     function minusProduct(){
-    var total = parseInt(localStorage.getItem( "Drug6Amount" ) );
+    var total = parseInt(sessionStorage.getItem( "Drug6Amount" ) );
     var updatedTotal = total -1;
-    localStorage.setItem( "Drug6Amount", updatedTotal ); 
+    sessionStorage.setItem( "Drug6Amount", updatedTotal ); 
     }
 </script>
 

@@ -34,20 +34,20 @@
   <!-- reusable script for all products-->
   <script>
     function setProduct(){
-      localStorage.setItem( "Drug2Name", "Cannabis sativa" );
-      localStorage.setItem( "Drug2Amount", 1);
+      sessionStorage.setItem( "Drug2Name", "Cannabis sativa" );
+      sessionStorage.setItem( "Drug2Amount", 1);
       }
 
       function plusProduct(){
-      var total = parseInt(localStorage.getItem( "Drug2Amount" ) );
+      var total = parseInt(sessionStorage.getItem( "Drug2Amount" ) );
       var updatedTotal = total +1;
-      localStorage.setItem( "Drug2Amount", updatedTotal ); 
+      sessionStorage.setItem( "Drug2Amount", updatedTotal ); 
       }
 
       function minusProduct(){
-      var total = parseInt(localStorage.getItem( "Drug2Amount" ) );
+      var total = parseInt(sessionStorage.getItem( "Drug2Amount" ) );
       var updatedTotal = total -1;
-      localStorage.setItem( "Drug2Amount", updatedTotal ); 
+      sessionStorage.setItem( "Drug2Amount", updatedTotal ); 
       }
   </script>
 
