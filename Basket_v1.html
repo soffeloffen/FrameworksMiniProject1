@@ -10,6 +10,7 @@
   </head>
   <body style="background-color: #646666">
     
+    <!--- Navigation Bar | Component-->
     <div class="navbar">
       <a href="ItemsOverview_v1.html">Dark Products</a>
       <a href="Welcome_v1.html">Home/Sign out</a>
@@ -18,36 +19,14 @@
       </div>
     </div>
 
-    <h1>View your basket of Dark stuff</h1>
-    <h1 id="h1">Basket for Anonymous User</h1>
-    <h3 id="wins">Number of wins: 0</h3>
-    <script>
-        document.body.onload = showStatistics();
-        function showStatistics() {
-            const userName = localStorage.fname + ' ' + localStorage.lname;
-            document.getElementById('h1').innerHTML = 'Basket for ' + userName
-            document.getElementById('wins').innerHTML = 'Number of items: ' + getWins()
-        }
-    </script>
-  </body>
 
     <a href="ItemsOverview_v1.html">
       <h1>Go back to browsing</h1>
     </a>
 
   </body>
-  <script>
-    document.body.onload = addUserName();
-    function addUserName() {
-      const userName = localStorage.fname;
-      if (userName !== undefined) {
-        document.getElementById("firstname").innerHTML = userName;
-      }
-    }
-  </script>
+ 
 
-  
 
-  <button id ="reset" onclick="reset()">Remove all items</button> <br>
 
 </html>

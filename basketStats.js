@@ -1,22 +1,9 @@
 
-function incWins() {
-    let wins = localStorage.wins
-    if(wins === undefined) {
-      wins++
-    } 
-    else {
-      wins = 1
-    }
-    localStorage.wins = wins
+function setItem(){
+localStorage.setItem( "total", 120 );
 }
 
-function getWins() {
-    let wins = localStorage.wins
-    if(wins === undefined) {
-        wins = 0
-    }
-    return wins 
-}
+
 
 
 function reset() {
