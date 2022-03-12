@@ -20,7 +20,25 @@
       </div>
     </div>
     <h1>BASKET</h1>
-    <h3 id="items">No items in your basket</h3>
+    <h3 id="item1"></h3>
+    <h3 id="item2"></h3>
+    <h3 id="item3"></h3>
+    <h3 id="item4"></h3>
+    <h3 id="item5"></h3>
+    <h3 id="item6"></h3>
+    <h3 id="id1"></h3>
+    <h3 id="id2"></h3>
+    <h3 id="id3"></h3>
+    <h3 id="id4"></h3>
+    <h3 id="id5"></h3>
+    <h3 id="id6"></h3>
+    <h3 id="id7"></h3>
+    <h3 id="id8"></h3>
+    <h3 id="id9"></h3>
+    <h3 id="id10"></h3>
+    <h3 id="id11"></h3>
+
+
 
 
     <a href="ItemsOverview_v1.html">
@@ -31,21 +49,45 @@
       document.body.onload = showBasket();
       function showBasket() {
       var linebreak = '\n';
+      
       var drug1 = localStorage.Drug1Name + ' - Amount: ' + localStorage.Drug1Amount;
       var drug2 = localStorage.Drug2Name + ' - Amount: ' + localStorage.Drug2Amount;
+      var drug3 = localStorage.Drug3Name + ' - Amount: ' + localStorage.Drug3Amount;
+      var drug4 = localStorage.Drug4Name + ' - Amount: ' + localStorage.Drug4Amount;
+      var drug5 = localStorage.Drug5Name + ' - Amount: ' + localStorage.Drug5Amount;
+      var drug6 = localStorage.Drug6Name + ' - Amount: ' + localStorage.Drug6Amount;
 
-      document.getElementById('items').innerHTML = drug1 + linebreak + drug2
+      var id1 = localStorage.Id1Name + ' - Amount: ' + localStorage.Id1Amount;
+      var id2 = localStorage.Id2Name + ' - Amount: ' + localStorage.Id2Amount;
+      var id3 = localStorage.Id3Name + ' - Amount: ' + localStorage.Id3Amount;
+      var id4 = localStorage.Id4Name + ' - Amount: ' + localStorage.Id4Amount;
+      var id5 = localStorage.Id5Name + ' - Amount: ' + localStorage.Id5Amount;
+      var id6 = localStorage.Id6Name + ' - Amount: ' + localStorage.Id6Amount;
+      var id7 = localStorage.Id7Name + ' - Amount: ' + localStorage.Id7Amount;
+      var id8 = localStorage.Id8Name + ' - Amount: ' + localStorage.Id8Amount;
+      var id9 = localStorage.Id9Name + ' - Amount: ' + localStorage.Id9Amount;
+      var id10 = localStorage.Id10Name + ' - Amount: ' + localStorage.Id10Amount;
+      var id11 = localStorage.Id11Name + ' - Amount: ' + localStorage.Id11Amount;
 
 
-      var itemsList = [];
-      itemsList.push(drug1);
-      itemsList.push(drug2);
+      document.getElementById('item1').innerHTML = drug1 
+      document.getElementById('item2').innerHTML = drug2
+      document.getElementById('item3').innerHTML = drug3 
+      document.getElementById('item4').innerHTML = drug4
+      document.getElementById('item5').innerHTML = drug5 
+      document.getElementById('item6').innerHTML = drug6
 
-      for (let i = 0; i < itemsList.length; i++) {
-                  itemsList[i] = "- " + itemsList[i] + "<br>";
-                }
-                itemsList = itemsList.join("");
-                document.getElementById("ovde").innerHTML = itemsList;
+      document.getElementById('id1').innerHTML = id1 
+      document.getElementById('id2').innerHTML = id2
+      document.getElementById('id3').innerHTML = id3 
+      document.getElementById('id4').innerHTML = id4 
+      document.getElementById('id5').innerHTML = id5 
+      document.getElementById('id6').innerHTML = id6 
+      document.getElementById('id7').innerHTML = id7 
+      document.getElementById('id8').innerHTML = id8   
+      document.getElementById('id9').innerHTML = id9 
+      document.getElementById('id10').innerHTML = id10 
+      document.getElementById('id11').innerHTML = id11
 
       }
     </script>
