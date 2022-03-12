@@ -34,20 +34,20 @@
   <!-- reusable script for all products-->
   <script>
     function setProduct(){
-      localStorage.setItem( "Drug3Name", "LSD" );
-      localStorage.setItem( "Drug3Amount", 1);
+      sessionStorage.setItem( "Drug3Name", "LSD" );
+      sessionStorage.setItem( "Drug3Amount", 1);
       }
 
       function plusProduct(){
-      var total = parseInt(localStorage.getItem( "Drug3Amount" ) );
+      var total = parseInt(sessionStorage.getItem( "Drug3Amount" ) );
       var updatedTotal = total +1;
-      localStorage.setItem( "Drug3Amount", updatedTotal ); 
+      sessionStorage.setItem( "Drug3Amount", updatedTotal ); 
       }
 
       function minusProduct(){
-      var total = parseInt(localStorage.getItem( "Drug3Amount" ) );
+      var total = parseInt(sessionStorage.getItem( "Drug3Amount" ) );
       var updatedTotal = total -1;
-      localStorage.setItem( "Drug3Amount", updatedTotal ); 
+      sessionStorage.setItem( "Drug3Amount", updatedTotal ); 
       }
   </script>
 

@@ -33,20 +33,20 @@
 
 <script>
   function setProduct(){
-    localStorage.setItem( "Id7Name", "Austria Passport" );
-    localStorage.setItem( "Id7Amount", 1);
+    sessionStorage.setItem( "Id7Name", "Austria Passport" );
+    sessionStorage.setItem( "Id7Amount", 1);
     }
 
     function plusProduct(){
-    var total = parseInt(localStorage.getItem( "Id7Amount" ) );
+    var total = parseInt(sessionStorage.getItem( "Id7Amount" ) );
     var updatedTotal = total +1;
-    localStorage.setItem( "Id7Amount", updatedTotal ); 
+    sessionStorage.setItem( "Id7Amount", updatedTotal ); 
     }
 
     function minusProduct(){
-    var total = parseInt(localStorage.getItem( "Id7Amount" ) );
+    var total = parseInt(sessionStorage.getItem( "Id7Amount" ) );
     var updatedTotal = total -1;
-    localStorage.setItem( "Id7Amount", updatedTotal ); 
+    sessionStorage.setItem( "Id7Amount", updatedTotal ); 
     }
 </script>
 
