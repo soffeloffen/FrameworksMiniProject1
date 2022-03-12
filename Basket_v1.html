@@ -28,8 +28,8 @@
 
 
     <script>
-      document.body.onload = addItem(); // attaching the event handler- addUserName function​​
-      function addItem() {
+      document.body.onload = setDrug1(); // attaching the event handler- addUserName function​​
+      function setDrug1() {
         const itemName = sessionStorage.Drug1Name;
         if (itemName !== undefined) {
           document.getElementById("message").innerHTML =
