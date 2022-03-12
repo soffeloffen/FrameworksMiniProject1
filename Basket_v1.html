@@ -36,6 +36,17 @@
 
       document.getElementById('items').innerHTML = drug1 + linebreak + drug2
 
+
+      var itemsList = [];
+      itemsList.push(drug1);
+      itemsList.push(drug2);
+
+      for (let i = 0; i < itemsList.length; i++) {
+                  itemList[i] = "- " + itemList[i] + "<br>";
+                }
+                itemList = itemList.join("");
+                document.getElementById("ovde").innerHTML = customItems;
+
       }
     </script>
 
