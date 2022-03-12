@@ -1,6 +1,6 @@
 
 function setItem(){
-localStorage.setItem( "total", 120 );
+sessionStorage.setItem( "total", 120 );
 }
 
 
