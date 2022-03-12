@@ -32,8 +32,31 @@
     <p id="caption"></p>
   </div>
 
+  <!-- reusable script for all products-->
+  <script>
+    function setDrug1(){
+      localStorage.setItem( "Drug1Name", "Magic Mushrooms" );
+      localStorage.setItem( "Drug1Amount", 1);
+      }
+
+      function plusDrug1(){
+      var total = parseInt(localStorage.getItem( "Drug1Amount" ) );
+      var updatedTotal = total +1;
+      localStorage.setItem( "Drug1Amount", updatedTotal ); 
+      }
+
+      function minusDrug1(){
+      var total = parseInt(localStorage.getItem( "Drug1Amount" ) );
+      var updatedTotal = total -1;
+      localStorage.setItem( "Drug1Amount", updatedTotal ); 
+      }
+  </script>
+
   <button onclick="setDrug1()">Save to Basket</button>
-  <button onclick="updateDrug1()">Add 1 More to Basket</button>
+  <button onclick="plusDrug1()">+1 to Basket</button>
+  <button onclick="minusDrug1()">-1 from Basket</button>
+
+
 
 
 
