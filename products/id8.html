@@ -20,5 +20,28 @@
   <p><button>Add to Cart</button></p>
 </div>
 
+<script>
+  function setProduct(){
+    localStorage.setItem( "Id8Name", "Poland Passport" );
+    localStorage.setItem( "Id8Amount", 1);
+    }
+
+    function plusProduct(){
+    var total = parseInt(localStorage.getItem( "Id8Amount" ) );
+    var updatedTotal = total +1;
+    localStorage.setItem( "Id8Amount", updatedTotal ); 
+    }
+
+    function minusProduct(){
+    var total = parseInt(localStorage.getItem( "Id8Amount" ) );
+    var updatedTotal = total -1;
+    localStorage.setItem( "Id8Amount", updatedTotal ); 
+    }
+</script>
+
+<button onclick="setProduct()">Save to Basket</button>
+<button onclick="plusProduct()">+1 to Basket</button>
+<button onclick="minusProduct()">-1 from Basket</button>
+
 </body>
 </html>

@@ -21,6 +21,29 @@
   </p>
   <p><button>Add to Cart</button></p>
 </div>
+<script>
+  function setProduct(){
+    localStorage.setItem( "Drug6Name", "Edible Gummies (Hash)" );
+    localStorage.setItem( "Drug6Amount", 1);
+    }
+
+    function plusProduct(){
+    var total = parseInt(localStorage.getItem( "Drug6Amount" ) );
+    var updatedTotal = total +1;
+    localStorage.setItem( "Drug6Amount", updatedTotal ); 
+    }
+
+    function minusProduct(){
+    var total = parseInt(localStorage.getItem( "Drug6Amount" ) );
+    var updatedTotal = total -1;
+    localStorage.setItem( "Drug6Amount", updatedTotal ); 
+    }
+</script>
+
+<button onclick="setProduct()">Save to Basket</button>
+<button onclick="plusProduct()">+1 to Basket</button>
+<button onclick="minusProduct()">-1 from Basket</button>
+
 
 </body>
 </html>

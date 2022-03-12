@@ -19,6 +19,27 @@
     The quality is the best in the market, and has won the Best Fake IDs Dark Award three years in a row.</p>
   <p><button>Add to Cart</button></p>
 </div>
+<script>
+  function setProduct(){
+    localStorage.setItem( "Id2Name", "Danish Passport" );
+    localStorage.setItem( "Id2Amount", 1);
+    }
 
+    function plusProduct(){
+    var total = parseInt(localStorage.getItem( "Id2Amount" ) );
+    var updatedTotal = total +1;
+    localStorage.setItem( "Id2Amount", updatedTotal ); 
+    }
+
+    function minusProduct(){
+    var total = parseInt(localStorage.getItem( "Id2Amount" ) );
+    var updatedTotal = total -1;
+    localStorage.setItem( "Id2Amount", updatedTotal ); 
+    }
+</script>
+
+<button onclick="setProduct()">Save to Basket</button>
+<button onclick="plusProduct()">+1 to Basket</button>
+<button onclick="minusProduct()">-1 from Basket</button>
 </body>
 </html>

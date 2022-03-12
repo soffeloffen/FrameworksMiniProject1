@@ -19,6 +19,31 @@
     It is a recreational drug, which can be used for multiple sclerosis and nerve pain.</p>
   <p><button>Add to Cart</button></p>
 </div>
+  <!-- reusable script for all products-->
+  <script>
+    function setProduct(){
+      localStorage.setItem( "Drug2Name", "Cannabis sativa" );
+      localStorage.setItem( "Drug2Amount", 1);
+      }
+
+      function plusProduct(){
+      var total = parseInt(localStorage.getItem( "Drug2Amount" ) );
+      var updatedTotal = total +1;
+      localStorage.setItem( "Drug2Amount", updatedTotal ); 
+      }
+
+      function minusProduct(){
+      var total = parseInt(localStorage.getItem( "Drug2Amount" ) );
+      var updatedTotal = total -1;
+      localStorage.setItem( "Drug2Amount", updatedTotal ); 
+      }
+  </script>
+
+  <button onclick="setProduct()">Save to Basket</button>
+  <button onclick="plusProduct()">+1 to Basket</button>
+  <button onclick="minusProduct()">-1 from Basket</button>
+
+
 
 </body>
 </html>

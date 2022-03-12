@@ -19,6 +19,31 @@
     At sufficiently high dosages LSD manifests primarily visual, as well as auditory, hallucinations.</p>
   <p><button>Add to Cart</button></p>
 </div>
+  <!-- reusable script for all products-->
+  <script>
+    function setProduct(){
+      localStorage.setItem( "Drug3Name", "LSD" );
+      localStorage.setItem( "Drug3Amount", 1);
+      }
+
+      function plusProduct(){
+      var total = parseInt(localStorage.getItem( "Drug3Amount" ) );
+      var updatedTotal = total +1;
+      localStorage.setItem( "Drug3Amount", updatedTotal ); 
+      }
+
+      function minusProduct(){
+      var total = parseInt(localStorage.getItem( "Drug3Amount" ) );
+      var updatedTotal = total -1;
+      localStorage.setItem( "Drug3Amount", updatedTotal ); 
+      }
+  </script>
+
+  <button onclick="setProduct()">Save to Basket</button>
+  <button onclick="plusProduct()">+1 to Basket</button>
+  <button onclick="minusProduct()">-1 from Basket</button>
+
+
 
 </body>
 </html>
