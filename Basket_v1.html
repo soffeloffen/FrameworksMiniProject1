@@ -19,23 +19,21 @@
       </div>
     </div>
 
-    <h1 id="h1">Bird Quiz statistics for Anonymous User</h1>
+    <h3 id="items">No items in your basket</h3>
+
 
     <a href="ItemsOverview_v1.html">
       <h1>Go back to browsing</h1>
     </a>
 
-    <h3 id="items">No items in your basket</h3>
 
 
     <script>
       document.body.onload = showBasket();
       function showBasket() {
-      var drug1Name = localStorage.getItem("Drug1Name");
+      const drug1 = localStorage.Drug1Name + ' Amount: ' + localStorage.Drug1Amount;
 
-      const userName = localStorage.fname + ' ' + localStorage.lname;
-      document.getElementById('h1').innerHTML = 'Basket for ' + userName
-      document.getElementById('h3').innerHTML = 'Items ' + drug1Name
+      document.getElementById('h3').innerHTML = 'Items ' + drug1;
       }
     </script>
 
