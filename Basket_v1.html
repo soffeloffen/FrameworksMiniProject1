@@ -29,11 +29,10 @@
 
     <script>
       document.body.onload = setDrug1(); // attaching the event handler- addUserName function​​
-      function setDrug1() {
+      function viewBasket() {
         const itemName = sessionStorage.Drug1Name;
         if (itemName !== undefined) {
-          document.getElementById("message").innerHTML =
-            itemName ;
+          document.getElementById("message").innerHTML =itemName ;
         }
       }
     </script>
