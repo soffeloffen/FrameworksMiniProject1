@@ -14,5 +14,5 @@ sessionStorage.setItem( "Drug1Amount", updatedTotal );
 
 
 function reset() {
-    sessionStorage.removeItem = 0
+    sessionStorage.removeItem;
 }
