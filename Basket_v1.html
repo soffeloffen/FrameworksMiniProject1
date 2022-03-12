@@ -18,7 +18,7 @@
         <b id="firstname"></b>
       </div>
     </div>
-
+    <h1>BASKET</h1>
     <h3 id="items">No items in your basket</h3>
 
 
@@ -26,14 +26,11 @@
       <h1>Go back to browsing</h1>
     </a>
 
-
-
     <script>
       document.body.onload = showBasket();
       function showBasket() {
-      const drug1 = localStorage.Drug1Name + ' Amount: ' + localStorage.Drug1Amount;
-
-      document.getElementById('items').innerHTML = 'Items ' + drug1
+      const drug1 = localStorage.Drug1Name + ' - Amount: ' + localStorage.Drug1Amount;
+      document.getElementById('items').innerHTML = drug1
       }
     </script>
 
