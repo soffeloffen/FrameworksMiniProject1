@@ -31,8 +31,8 @@
       document.body.onload = showBasket();
       function showBasket() {
       var linebreak = '\n';
-      const drug1 = localStorage.Drug1Name + ' - Amount: ' + localStorage.Drug1Amount;
-      const drug2 = localStorage.Drug2Name + ' - Amount: ' + localStorage.Drug2Amount;
+      var drug1 = localStorage.Drug1Name + ' - Amount: ' + localStorage.Drug1Amount;
+      var drug2 = localStorage.Drug2Name + ' - Amount: ' + localStorage.Drug2Amount;
 
       document.getElementById('items').innerHTML = drug1 + linebreak + drug2
 
