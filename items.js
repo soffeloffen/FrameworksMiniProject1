@@ -46,3 +46,23 @@ function myFunction1() {
       x.style.display = "none";
     }
   }
+
+  function myFunction3() {
+    var x = document.getElementById("EUpass");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    return x.style.display;
+  }
+
+  function myFunction4() {
+    var x = document.getElementById("plants");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    return x.style.display;
+  }
