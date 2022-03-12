@@ -1,26 +1,18 @@
+var amount= 0;
 
-function incWins() {
-    let wins = localStorage.wins
-    if(wins === undefined) {
-      wins++
-    } 
-    else {
-      wins = 1
-    }
-    localStorage.wins = wins
+function setDrug1(){
+localStorage.setItem( "Drug1Name", "Magic Mushrooms" );
+localStorage.setItem( "Drug1Amount", 1);
 }
 
-function getWins() {
-    let wins = localStorage.wins
-    if(wins === undefined) {
-        wins = 0
-    }
-    return wins 
+function updateDrug1(){
+var total = parseInt(localStorage.getItem( "Drug1Amount" ) );
+var updatedTotal = total +1;
+localStorage.setItem( "Drug1Amount", updatedTotal ); 
 }
+
 
 
 function reset() {
-    localStorage.attempts = 0
-    localStorage.wins = 0
-    localStorage.losses = 0
+    sessionStorage.removeItem;
 }
