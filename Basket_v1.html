@@ -19,6 +19,7 @@
       </div>
     </div>
 
+    <h1 id="h1">Bird Quiz statistics for Anonymous User</h1>
 
     <a href="ItemsOverview_v1.html">
       <h1>Go back to browsing</h1>
@@ -28,13 +29,14 @@
 
 
     <script>
-      document.body.onload = setDrug1(); // attaching the event handler- addUserName function​​
-      function viewBasket() {
-        const itemName = localStorage.Drug1Name;
-        if (itemName !== undefined) {
-          document.getElementById("items").innerHTML =itemName ;
-        }
-      }
+      document.body.onload = showStatistics();
+      function showBasket() {
+      var drug1Name = localStorage.getItem("Drug1Name");
+
+      const userName = localStorage.fname + ' ' + localStorage.lname;
+      document.getElementById('h1').innerHTML = 'Basket for ' + userName
+      document.getElementById('h3').innerHTML = 'Items ' + drug1Name
+
     </script>
 
   </body>
