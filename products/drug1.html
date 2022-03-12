@@ -33,34 +33,8 @@
   </div>
 
   <button onclick="setDrug1()">Save to Basket</button>
+  <button onclick="updateDrug1()">Add 1 More to Basket</button>
 
-  <div class="center">
-    <form>
-      <table>
-          <label for="itemName">Item:</label><br />
-          <label type="”text”" id="itemName" name="itemName"><br/>
-          <label for="itemAmount">Amount</label><br />
-          <label type="”text”" id="itemAmount" name="1"><br/>
-      <input class="button1 button"
-        type="submit"
-        onclick="store()"
-        value="save"
-      />
-    </form>
-  </div>
-
-  <script type="text/javascript">
-    function store() {
-      //get firstname
-      let item1Name = document.getElementById("itemName");
-      //save firstname
-      localStorage.setItem("itemName", item1Name.value);
-      //get lastname
-      let item1Amount = document.getElementById("itemAmount");
-      //save last name
-      localStorage.setItem("lname", item1Amount.value);
-    }
-  </script>
 
 
 </body>
