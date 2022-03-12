@@ -1,8 +1,8 @@
-var amount = 0;
+var amount= 0;
 
 function setDrug1(){
 sessionStorage.setItem( "ItemName", "Magic Mushrooms" );
-sessionStorage.setItem( "Amount", amount++);
+sessionStorage.setItem( "Amount", amount=amount +1);
 
 }
 
