@@ -30,7 +30,7 @@
     <script>
       document.body.onload = setDrug1(); // attaching the event handler- addUserName function​​
       function viewBasket() {
-        const itemName = sessionStorage.Drug1Name;
+        const itemName = localStorage.Drug1Name;
         if (itemName !== undefined) {
           document.getElementById("items").innerHTML =itemName ;
         }
