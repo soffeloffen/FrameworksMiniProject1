@@ -49,24 +49,24 @@
       document.body.onload = showBasket();
       function showBasket() {
       
-      var drug1 = localStorage.Drug1Name + ' - Amount: ' + localStorage.Drug1Amount;
-      var drug2 = localStorage.Drug2Name + ' - Amount: ' + localStorage.Drug2Amount;
-      var drug3 = localStorage.Drug3Name + ' - Amount: ' + localStorage.Drug3Amount;
-      var drug4 = localStorage.Drug4Name + ' - Amount: ' + localStorage.Drug4Amount;
-      var drug5 = localStorage.Drug5Name + ' - Amount: ' + localStorage.Drug5Amount;
-      var drug6 = localStorage.Drug6Name + ' - Amount: ' + localStorage.Drug6Amount;
+      var drug1 = sessionStorage.Drug1Name + ' - Amount: ' + sessionStorage.Drug1Amount;
+      var drug2 = sessionStorage.Drug2Name + ' - Amount: ' + sessionStorage.Drug2Amount;
+      var drug3 = sessionStorage.Drug3Name + ' - Amount: ' + sessionStorage.Drug3Amount;
+      var drug4 = sessionStorage.Drug4Name + ' - Amount: ' + sessionStorage.Drug4Amount;
+      var drug5 = sessionStorage.Drug5Name + ' - Amount: ' + sessionStorage.Drug5Amount;
+      var drug6 = sessionStorage.Drug6Name + ' - Amount: ' + sessionStorage.Drug6Amount;
 
-      var id1 = localStorage.Id1Name + ' - Amount: ' + localStorage.Id1Amount;
-      var id2 = localStorage.Id2Name + ' - Amount: ' + localStorage.Id2Amount;
-      var id3 = localStorage.Id3Name + ' - Amount: ' + localStorage.Id3Amount;
-      var id4 = localStorage.Id4Name + ' - Amount: ' + localStorage.Id4Amount;
-      var id5 = localStorage.Id5Name + ' - Amount: ' + localStorage.Id5Amount;
-      var id6 = localStorage.Id6Name + ' - Amount: ' + localStorage.Id6Amount;
-      var id7 = localStorage.Id7Name + ' - Amount: ' + localStorage.Id7Amount;
-      var id8 = localStorage.Id8Name + ' - Amount: ' + localStorage.Id8Amount;
-      var id9 = localStorage.Id9Name + ' - Amount: ' + localStorage.Id9Amount;
-      var id10 = localStorage.Id10Name + ' - Amount: ' + localStorage.Id10Amount;
-      var id11 = localStorage.Id11Name + ' - Amount: ' + localStorage.Id11Amount;
+      var id1 = sessionStorage.Id1Name + ' - Amount: ' + sessionStorage.Id1Amount;
+      var id2 = sessionStorage.Id2Name + ' - Amount: ' + sessionStorage.Id2Amount;
+      var id3 = sessionStorage.Id3Name + ' - Amount: ' + sessionStorage.Id3Amount;
+      var id4 = sessionStorage.Id4Name + ' - Amount: ' + sessionStorage.Id4Amount;
+      var id5 = sessionStorage.Id5Name + ' - Amount: ' + sessionStorage.Id5Amount;
+      var id6 = sessionStorage.Id6Name + ' - Amount: ' + sessionStorage.Id6Amount;
+      var id7 = sessionStorage.Id7Name + ' - Amount: ' + sessionStorage.Id7Amount;
+      var id8 = sessionStorage.Id8Name + ' - Amount: ' + sessionStorage.Id8Amount;
+      var id9 = sessionStorage.Id9Name + ' - Amount: ' + sessionStorage.Id9Amount;
+      var id10 = sessionStorage.Id10Name + ' - Amount: ' + sessionStorage.Id10Amount;
+      var id11 = sessionStorage.Id11Name + ' - Amount: ' + sessionStorage.Id11Amount;
 
 
       document.getElementById('item1').innerHTML = drug1 
@@ -91,6 +91,13 @@
       }
     </script>
 
+<button onclick="emptyBasket()">EMPTY BASKET</button>
+
+<script>
+  function emptyBasket(){
+    sessionStorage.clear()
+}
+</script>
   </body>
  
 
